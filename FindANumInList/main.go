@@ -5,8 +5,8 @@ import (
 )
 
 func NumInList(arr []int, n int) bool {
-	for i:=0; i < len(arr); i++ {
-		if arr[i] == n {
+	for _, elem := range arr {
+		if elem == n {
 			return true
 		}
 	}
