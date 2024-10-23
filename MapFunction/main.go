@@ -12,6 +12,7 @@ func main() {
 	res = mapping(double, arr)
 
 	fmt.Println("Double>", res)
+	fmt.Printf("Type %8T, val %[1]v\n", res)
 }
 
 type funcType func(int) int
