@@ -6,11 +6,9 @@ func main() {
 	arr := []int{1, 2, 3, 4, 5}
 	
 	res := mapping(sum, arr)
-
 	fmt.Println("Plus one>", res)
 
 	res = mapping(double, arr)
-
 	fmt.Println("Double>", res)
 	fmt.Printf("Type %8T, val %[1]v\n", res)
 
