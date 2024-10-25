@@ -13,6 +13,9 @@ func main() {
 
 	fmt.Println("Double>", res)
 	fmt.Printf("Type %8T, val %[1]v\n", res)
+
+	res = mapping(triple, arr)
+	fmt.Println("Triple>", res)
 }
 
 type funcType func(int) int
@@ -31,4 +34,8 @@ func sum(n int) int {
 
 func double(n int) int {
 	return n * 2
+}
+
+func triple(n int) int {
+	return n * 3
 }
