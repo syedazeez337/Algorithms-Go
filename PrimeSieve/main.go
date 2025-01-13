@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"time"
 )
 
 func sieve(n int) []int {
@@ -33,5 +34,7 @@ func sieve(n int) []int {
 }
 
 func main() {
-	fmt.Println(sieve(25))
+	start := time.Now()
+	fmt.Println(sieve(450000))
+	fmt.Printf("Time taken: %v\n", time.Since(start))
 }
