@@ -17,6 +17,6 @@ func gcd(m, n int) int {
 }
 
 func main() {
-	ans := gcd(60, 24)
+	ans := gcd(31415, 14142)
 	fmt.Println(ans)
 }

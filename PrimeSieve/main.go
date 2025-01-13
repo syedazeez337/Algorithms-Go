@@ -35,6 +35,6 @@ func sieve(n int) []int {
 
 func main() {
 	start := time.Now()
-	fmt.Println(sieve(450000))
+	fmt.Println(sieve(8532))
 	fmt.Printf("Time taken: %v\n", time.Since(start))
 }
