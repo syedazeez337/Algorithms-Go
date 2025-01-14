@@ -3,28 +3,33 @@ package main
 import "fmt"
 
 func conDup(ar []int) bool {
-	var res bool
+
+	n := len(ar)
 
 	if len(ar) <= 1 {
-		res = false
+		return false
 	} else {
-		for i, elem := range ar {
-			if elem == ar[i+1] {
-				res = true
-				return res
-			} else {
-				res = false
-				return res
+		for i := 0; i <= n-2; i++ {
+			for j := i + 1; j <= n-1; j++ {
+				if ar[i] == ar[j] {
+					return true
+				}
 			}
 		}
-	}
 
-	return res
+	}
+	return false
 }
 
 func main() {
-	arr := []int{1, 2, 3, 6, 4}
-	fmt.Println(conDup(arr))
+	ar := []int{1, 2, 3, 4, 5}
+	ar2 := []int{1,1,1,3,3,4,3,2,4,2}
+
+	res := conDup(ar)
+	fmt.Printf("Array %v has duplicates %v\n", ar, res)
+
+	res = conDup(ar2)
+	fmt.Printf("Array %v has duplicates %v\n", ar2, res)
 }
 
 /*
