@@ -10,8 +10,13 @@ func towerOfHanoi(n int) int {
 	}
 }
 
+func M(n int) int {
+    return (1 << n) - 1 // Efficient calculation using bitwise shift
+}
+
+
 func main() {
-	for i := range 3 {
-		fmt.Printf("Steps %d\n", towerOfHanoi(i))
+	for i := range 10 {
+		fmt.Printf("Steps %d\n", M(i))
 	}
 }
