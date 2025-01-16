@@ -26,7 +26,6 @@ func insertionSort(ar []int) []int {
 
 func main() {
 	ar := []int{61, 82, 67, 4, 98, 20, 37, 85}
-	strings.Compare()
 
 	fmt.Printf("Sorted %v\n", insertionSort(ar))
 }
