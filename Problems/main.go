@@ -36,5 +36,6 @@ func oddNumber(n int) bool {
 
 func main() {
 	ar := numGen(100)
+	fmt.Println(filter(evenNumber, ar))
 	fmt.Println(filter(oddNumber, ar))
 }
