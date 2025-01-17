@@ -19,7 +19,7 @@ func numGen(n int) []int {
 func filter(fn func(int) bool, ar []int) []int {
 	var res []int
 	for _, elem := range ar {
-		if fn(elem) && elem != 0 {
+		if fn(elem) {
 			res = append(res, elem)
 		}
 	}
@@ -27,10 +27,16 @@ func filter(fn func(int) bool, ar []int) []int {
 }
 
 func evenNumber(n int) bool {
+	if n == 0 {
+		return false
+	}
 	return n % 2 == 0
 }
 
 func oddNumber(n int) bool {
+	if n == 0 {
+		return false
+	}
 	return !evenNumber(n)
 }
 
